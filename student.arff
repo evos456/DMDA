@@ -1,0 +1,24 @@
+@relation student
+
+@attribute stuid numeric
+@attribute s.name string
+@attribute datamining numeric
+@attribute acd numeric
+@attribute mwt numeric
+@attribute aiml numeric
+@attribute ics numeric
+@attribute result{pass,fail}
+
+
+@data
+100,'ramu',55,53,52,51,55,pass
+101,'raju',50,47,42,41,55,fail
+102,'sanjeev',43,45,46,43,54,fail
+103,'pradeep',57,60,60,60,53,pass
+104,'manipal',60,60,55,59,56,pass
+105,'haricharan',55,56,57,59,67,pass
+106,'anusha',45,40,35,32,55,fail
+107,'raju',46,41,36,35,55,pass
+108,'sathvika',44,39,55,30,54,fail
+109,'ravi',55,53,58,33,52,fail
+110,'dipthamshu',42,50,55,57,55,pass

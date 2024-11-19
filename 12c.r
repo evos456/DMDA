@@ -1,3 +1,4 @@
+
 install.packages("randomForest")
 # Load the party package. It will automatically load other
 # required packages.
@@ -6,49 +7,6 @@ library(party)
 # Print some records from data set readingSkills.
 print(head(readingSkills))
 
-library("MASS")   
-print(str(Cars93))   
-# Loading the Mass library.   library("MASS")   
-print(str(Cars93))   
-# Loading the Mass library.   
-
-# Creating a data frame from the main data set.   
-car_data<- data.frame(Cars93$AirBags, Cars93$Type)   
-# Creating a table with the needed variables.   
-car_data = table(Cars93$AirBags, Cars93$Type)    
-print(car_data)   
-# Performing the Chi-Square test.   
-print(chisq.test(car_data))
-library("MASS")   
-print(str(Cars93))   
-# Loading the Mass library.   
-
-# Creating a data frame from the main data set.   
-car_data<- data.frame(Cars93$AirBags, Cars93$Type)   
-# Creating a table with the needed variables.   
-car_data = table(Cars93$AirBags, Cars93$Type)    
-print(car_data)   
-# Performing the Chi-Square test.   
-print(chisq.test(car_data))
-library("MASS")   
-print(str(Cars93))   
-# Loading the Mass library.   
-
-# Creating a data frame from the main data set.   
-car_data<- data.frame(Cars93$AirBags, Cars93$Type)   
-# Creating a table with the needed variables.   
-car_data = table(Cars93$AirBags, Cars93$Type)    
-print(car_data)   
-# Performing the Chi-Square test.   
-print(chisq.test(car_data))
-
-# Creating a data frame from the main data set.   
-car_data<- data.frame(Cars93$AirBags, Cars93$Type)   
-# Creating a table with the needed variables.   
-car_data = table(Cars93$AirBags, Cars93$Type)    
-print(car_data)   
-# Performing the Chi-Square test.   
-print(chisq.test(car_data))
 
 # Load the party package. It will automatically load other
 # required packages.
@@ -62,3 +20,19 @@ output.forest <- randomForest(nativeSpeaker ~ age + shoeSize + score,
 # View the forest results.
 print(output.forest) 
 
+
+output:
+
+print(output.forest) 
+
+Call:
+ randomForest(formula = nativeSpeaker ~ age + shoeSize + score,      data = readingSkills) 
+               Type of random forest: classification
+                     Number of trees: 500
+No. of variables tried at each split: 1
+
+        OOB estimate of  error rate: 1.5%
+Confusion matrix:
+    no yes class.error
+no  99   1        0.01
+yes  2  98        0.02
